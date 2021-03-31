@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Pixel';
+    src: url('../fonts/Pixel.ttf');
+}
+
+@font-face {
+    font-family: 'Oswald-Regular';
+    src: url('../fonts/Oswald-Regular.ttf');
+}
+
+footer {
+    position: relative;
+    color: #979797;
+    left: 425px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+body {
+    margin: 0px;
+    background-color: rgba(7, 7, 7, 0.898);
+    color: rgb(255, 255, 255);
+    height: 100%;
+    font-family: Oswald-Regular;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+}
+
+[wm-flappy] {
+    position: relative;
+    border: 5px solid white;
+    height: 500px;
+    width: 1000px;
+    box-shadow: 0 1px 10px 10px darkcyan;
+    margin: 15px;
+    background-color: deepskyblue;
+    overflow: hidden;
+}
+
+.passaro {
+    position: absolute;
+    width: 50px;
+    left: calc(50% - 30px);
+}
+
+.par-de-barreiras {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.barreira {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barreira .borda {
+    height: 30px;
+    width: 130px;
+    background: linear-gradient(90deg, #639301, #A5E82E);
+    border: 2px solid #000;
+}
+
+.barreira .corpo {
+    height: 150px;
+    width: 110px;
+    background: linear-gradient(90deg, #639301, #A5E82E);
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+}
+
+.progresso {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: Pixel;
+    font-size: 70px;
+    z-index: 100;
+    color: rgb(213, 1, 1);
+}
